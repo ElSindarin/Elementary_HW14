@@ -1,7 +1,10 @@
+import java.util.List;
+
 public class NoSortStrategy implements Strategy {
+
     @Override
-    public void addData(DataCollection dataCollection, Element element) {
-        dataCollection.getCollection().add(element);
+    public void addData(List<Element> list, Element element) {
+        list.add(element);
     }
 
     @Override

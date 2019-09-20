@@ -2,11 +2,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class ReversedSortStrategy implements Strategy {
-
     @Override
-    public void addData(DataCollection dataCollection, Element element) {
-        dataCollection.getCollection().add(element);
-        Collections.sort((List<Element>)dataCollection.getCollection(), Collections.reverseOrder());
+    public void addData(List<Element> list, Element element) {
+        list.add(element);
+        Collections.sort(list, Collections.reverseOrder());
     }
 
     @Override

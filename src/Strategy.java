@@ -1,4 +1,6 @@
+import java.util.List;
+
 public interface Strategy {
-    void addData(DataCollection dataCollection, Element element);
+    void addData(List<Element> list, Element element);
     void showStrategy();
 }
